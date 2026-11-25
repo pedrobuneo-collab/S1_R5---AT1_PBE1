@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "start": "tsx server.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "tsx --test server.test.ts"
   },
   "dependencies": { "express": "^5.1.0" },
   "devDependencies": {
