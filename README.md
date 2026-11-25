@@ -1,52 +1,41 @@
 # Exercícios Express.js com TypeScript
 
-Um único servidor Express com três rotas POST.
+Cada atividade possui sua própria pasta, servidor e configuração.
 
-## Instalação e execução
+## Exercício 1 - Mensagem
 
 ```bash
+cd exercicio1-mensagem
 npm install
 npm start
 ```
 
-Servidor disponível em `http://localhost:3000`.
+Rota: `POST /mensagem` — porta `3001`.
 
-## Rotas
-
-### POST `/mensagem`
-
-```json
-{
-  "nome": "Carlos",
-  "idade": 18,
-  "timeFavorito": "Real Madrid"
-}
-```
-
-### POST `/soma`
-
-```json
-{
-  "n1": 10,
-  "n2": 15,
-  "n3": 5
-}
-```
-
-### POST `/login`
-
-```json
-{
-  "usuario": "admin",
-  "senha": "123456"
-}
-```
-
-As credenciais ficam em `credenciais.json`.
-
-## Testes e compilação
+## Exercício 2 - Soma
 
 ```bash
-npm test
+cd exercicio2-soma
+npm install
+npm start
+```
+
+Rota: `POST /soma` — porta `3002`.
+
+## Exercício 3 - Login
+
+```bash
+cd exercicio3-login
+npm install
+npm start
+```
+
+Rota: `POST /login` — porta `3003`.
+
+As credenciais ficam em `exercicio3-login/credenciais.json`.
+
+Em cada pasta também é possível compilar com:
+
+```bash
 npm run build
 ```
