@@ -1,8 +1,6 @@
 {
-  "name": "exercicio1-mensagem",
-  "version": "1.0.0",
+  "name": "exercicios-express",
   "private": true,
-  "main": "dist/server.js",
   "scripts": {
     "start": "tsx server.ts",
     "build": "tsc",

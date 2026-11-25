@@ -1,49 +1,50 @@
 # Exercícios Express.js com TypeScript
 
-Este repositório contém três projetos independentes, cada um com uma API Express em TypeScript.
+Um único servidor Express com três rotas POST.
 
-## Projetos
-
-### 1. Mensagem
-
-- Porta: `3001`
-- Rota: `POST /mensagem`
-- Body: `{ "nome": "Carlos", "idade": 18, "timeFavorito": "Real Madrid" }`
+## Instalação e execução
 
 ```bash
-cd exercicio1-mensagem
 npm install
 npm start
 ```
 
-### 2. Soma
+Servidor disponível em `http://localhost:3000`.
 
-- Porta: `3002`
-- Rota: `POST /soma`
-- Body: `{ "n1": 10, "n2": 15, "n3": 5 }`
+## Rotas
 
-```bash
-cd exercicio2-soma
-npm install
-npm start
+### POST `/mensagem`
+
+```json
+{
+  "nome": "Carlos",
+  "idade": 18,
+  "timeFavorito": "Real Madrid"
+}
 ```
 
-### 3. Login
+### POST `/soma`
 
-- Porta: `3003`
-- Rota: `POST /login`
-- Body: `{ "usuario": "admin", "senha": "123456" }`
-- Credenciais carregadas de `credenciais.json`
-
-```bash
-cd exercicio3-login
-npm install
-npm start
+```json
+{
+  "n1": 10,
+  "n2": 15,
+  "n3": 5
+}
 ```
+
+### POST `/login`
+
+```json
+{
+  "usuario": "admin",
+  "senha": "123456"
+}
+```
+
+As credenciais ficam em `credenciais.json`.
 
 ## Testes e compilação
-
-Em cada pasta execute:
 
 ```bash
 npm test
